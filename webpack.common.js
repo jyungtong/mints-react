@@ -28,7 +28,6 @@ module.exports = {
         loader: 'source-map-loader'
       },
       {
-        // For pure CSS (without CSS modules)
         test: /\.css$/i,
         exclude: /\.module\.css$/i,
         use: ['style-loader', 'css-loader'],
@@ -36,12 +35,10 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [
-          // Creates `style` nodes from JS strings
           'style-loader',
-          // Translates CSS into CommonJS
           'css-loader',
-          // Compiles Sass to CSS
-          'sass-loader',
+          'postcss-loader',
+          'sass-loader'
         ],
       },
       {

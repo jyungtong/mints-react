@@ -2,3 +2,4 @@ coverage/*
 dist/*
 webpack.*.js
 dev-server.js
+postcss.config.js
