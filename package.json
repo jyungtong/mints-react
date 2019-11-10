@@ -4,6 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.3",
+    "@testing-library/react": "^9.3.2",
+    "@types/jest": "^24.0.22",
     "@types/react": "^16.9.1",
     "@types/react-dom": "^16.8.5",
     "@typescript-eslint/eslint-plugin": "^2.5.0",
@@ -19,6 +22,8 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.16.0",
     "html-webpack-plugin": "^3.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.9.0",
     "node-sass": "^4.13.0",
     "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
@@ -26,6 +31,7 @@
     "sass-loader": "^8.0.0",
     "source-map-loader": "^0.2.4",
     "style-loader": "^1.0.0",
+    "ts-jest": "^24.1.0",
     "ts-loader": "^6.0.4",
     "tsconfig-paths-webpack-plugin": "^3.2.0",
     "typescript": "^3.5.3",
@@ -43,6 +49,7 @@
     "build": "yarn clean && webpack --config webpack.prod.js",
     "clean": "rm -rf dist",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "start": "webpack-dev-server --open --config webpack.dev.js"
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "test": "jest"
   }
 }
