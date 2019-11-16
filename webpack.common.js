@@ -28,20 +28,6 @@ module.exports = {
         loader: 'source-map-loader'
       },
       {
-        test: /\.css$/i,
-        exclude: /\.module\.css$/i,
-        use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.s[ac]ss$/i,
-        use: [
-          'style-loader',
-          'css-loader',
-          'postcss-loader',
-          'sass-loader'
-        ],
-      },
-      {
         test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/i,
         loader: 'url-loader',
         options: {
